@@ -1,0 +1,131 @@
+/* ТЕКСТ */
+/* лого  #2196F3; STUDIO В ШАПКЕ ЧЕРНЫЙ, В ФУТЕРЕ БЕЛЫЙ*/
+
+/*  вторичный цвет текста color: #212121; */
+/* основной  цвет текста color: #757575; */
+
+/* белый цвет ЗАГОЛОВОК 1, КНОПКА, АДРЕС В ФУТЕРЕ #ffffff;*/
+/* акцент цвет background: #2196F3; */
+
+
+/* footer почта и телефон color: rgba(255, 255, 255, 0.6); */
+
+/* ФОН */
+/* основной background-color: #FFFFFF; */
+/* НАША КОМАНДА background-color: #F5F4FA; */
+/* ШАПКА, ФУТЕР background-color: #2F303A; */
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --contacts-text-color: rgba(255, 255, 255, 0.6);
+    --accent-color: #2196F3;
+    --primary-background-color: #ffffff;
+    --secondary-background-color: #f5f4fA;
+    --header-footer-background-color:#2f303a;
+}
+
+body {
+    background-color: #ffffff;
+    color: var(--primary-text-color);
+}
+
+.list {
+list-style: none;
+}
+
+.header-logo {
+    color: #000000;
+}
+
+.footer-logo {
+    color: #ffffff;
+}
+
+.header-logo:hover,
+.footer-logo:hover {
+    color: var(--accent-color);
+}
+
+.header-logo .accent,
+.footer-logo .accent {
+    color: var(--accent-color);
+}
+
+/* Site-nav */
+.site-nav .link {
+    color: var(--title-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--accent-color);
+}
+
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+
+.auth-nav .button {
+    color: var(--title-text-color);
+}
+
+.auth-nav .button:hover,
+.auth-nav .button:focus {
+    color: var(--accent-color)
+
+/* Hero */
+
+.hero-title {
+    color: var(--primary-background-color);
+}
+    
+    
+/* Section */
+
+.section-title {
+    color: var(--title-text-color);
+}
+
+/* Features */
+
+.not-visible {
+    visibility: hidden;
+}
+
+.feature .title {
+    color: var(--title-text-color);
+}
+
+/* Command */
+
+.command .title {
+    color: var(--title-text-color);
+}
+
+/* Button */
+
+button {
+    color: var(--primary-background-color);
+    background-color: var(--accent-color);
+    cursor: pointer;   
+
+}
+
+
+
+/* Portfolio
+.button.secondary {
+    color: var(--title-text-color:);
+    background-color: var(--secondary-background-color)
+} */
+
+/* Footer */
+
+
+.contacts-item {
+    color: var(--contacts-text-color)
+}
+
+.contacts-item .link {
+    color: var(--primary-background-color);
+}

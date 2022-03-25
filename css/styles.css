@@ -66,12 +66,13 @@ list-style: none;
 }
 
 .auth-nav .button {
-    color: var(--title-text-color);
+    color: var(--primary-text-color);
 }
 
 .auth-nav .button:hover,
 .auth-nav .button:focus {
-    color: var(--accent-color)
+    color: var(--accent-color);
+}
 
 /* Hero */
 
@@ -79,7 +80,15 @@ list-style: none;
     color: var(--primary-background-color);
 }
     
-    
+ /* Button */
+
+button {
+    color: var(--primary-background-color);
+    background-color: var(--accent-color);
+    cursor: pointer;   
+
+}
+   
 /* Section */
 
 .section-title {
@@ -102,16 +111,16 @@ list-style: none;
     color: var(--title-text-color);
 }
 
-/* Button */
+/* Footer */
 
-button {
-    color: var(--primary-background-color);
-    background-color: var(--accent-color);
-    cursor: pointer;   
-
+.contacts-item .link {
+    color: var(--contacts-text-color);
 }
 
 
+.contacts-item a[title] {
+    color: var(--primary-background-color);
+}
 
 /* Portfolio
 .button.secondary {
@@ -119,13 +128,3 @@ button {
     background-color: var(--secondary-background-color)
 } */
 
-/* Footer */
-
-
-.contacts-item {
-    color: var(--contacts-text-color)
-}
-
-.contacts-item .link {
-    color: var(--primary-background-color);
-}

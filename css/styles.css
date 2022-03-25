@@ -22,39 +22,48 @@
     --title-text-color: #212121;
     --contacts-text-color: rgba(255, 255, 255, 0.6);
     --accent-color: #2196F3;
-    --primary-background-white-color: #ffffff;
+    --primary-white-color: #ffffff;
     --secondary-background-color: #f5f4fA;
     --header-footer-background-color:#2f303a;
 }
 
 body {
-    background-color: var(--primary-background-white-color)
+    background-color: var(--primary-white-color);
     color: var(--primary-text-color);
+    
+    font-family: Roboto, sans-serif;
 }
 
-.header-logo {
+.logo {
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}
+
+.logo.header {
     color: var(--title-text-color);
 }
 
-.footer-logo {
-    color: var(--primary-background-white-color)
-}
-
-.header-logo:hover,
-.header-logo:focus {
+.logo.header:hover,
+.logo.header:focus {
     color: var(--accent-color);
 }
 
-.header-logo .accent {
+.logo.header .accent {
     color: var(--accent-color);
 }
 
-.footer-logo:hover,
-.footer-logo:focus {
+.logo.footer {
+    color: var(--primary-white-color);
+}
+
+.logo.footer:hover,
+.logo.footer:focus {
     color: var(--accent-color);
 }
 
-.footer-logo .accent {
+.logo.footer .accent {
     color: var(--accent-color);
 }
 
@@ -65,6 +74,10 @@ body {
 /* Site-nav */
 .site-nav .link {
     color: var(--title-text-color);
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
 }
 
 .site-nav .link:hover,
@@ -92,18 +105,27 @@ body {
     background: var(--header-footer-background-color);
 }
 .hero-title {
-    color: var(--primary-background-white-color);
+    color: var(--primary-white-color);
     }
     
  /* Button */
 
 button {
-    color: var(--primary-background-color);
-    background-color: var(--accent-color);
-    cursor: pointer;   
-
+    color: var(--title-text-color);
+    background-color: var(--primary-white-color);
+    font-family: inherit;
+    cursor: pointer;
 }
-   
+
+.primary-button {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);        
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;  
+}
+
 /* Section */
 
 .section-title {
@@ -122,7 +144,7 @@ button {
 
 /* Our Command */
 
-.command {
+.section.command {
     background-color: var(--secondary-background-color);
 }
 
@@ -145,16 +167,29 @@ button {
 }
 
 .contacts-item a[title] {
-    color: var(--primary-background-white-color);
+    color: var(--primary-white-color);
 }
 
 .contacts-item a[title]:hover,
 .contacts-item a[title]:focus {
     color: var(--accent-color);
 }
-/* Portfolio
-.button.secondary {
-    color: var(--title-text-color:);
-    background-color: var(--secondary-background-color)
-} */
+/* Portfolio */
+
+.portfolio-title {
+    color: var(--title-text-color);
+}
+
+.portfolio-button-item {
+    color: var(--title-text-color);
+    background-color: var(--secondary-background-color);
+    
+}
+
+.portfolio-button-item:hover,
+.portfolio-button-item:focus {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+}
+
 

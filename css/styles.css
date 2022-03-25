@@ -14,43 +14,54 @@
 /* основной background-color: #FFFFFF; */
 /* НАША КОМАНДА background-color: #F5F4FA; */
 /* ШАПКА, ФУТЕР background-color: #2F303A; */
+
+/* Стили для index.html */
+
 :root {
     --primary-text-color: #757575;
     --title-text-color: #212121;
     --contacts-text-color: rgba(255, 255, 255, 0.6);
     --accent-color: #2196F3;
-    --primary-background-color: #ffffff;
+    --primary-background-white-color: #ffffff;
     --secondary-background-color: #f5f4fA;
     --header-footer-background-color:#2f303a;
 }
 
 body {
-    background-color: #ffffff;
+    background-color: var(--primary-background-white-color)
     color: var(--primary-text-color);
 }
 
-.list {
-list-style: none;
-}
-
 .header-logo {
-    color: #000000;
+    color: var(--title-text-color);
 }
 
 .footer-logo {
-    color: #ffffff;
+    color: var(--primary-background-white-color)
 }
 
 .header-logo:hover,
-.footer-logo:hover {
+.header-logo:focus {
     color: var(--accent-color);
 }
 
-.header-logo .accent,
+.header-logo .accent {
+    color: var(--accent-color);
+}
+
+.footer-logo:hover,
+.footer-logo:focus {
+    color: var(--accent-color);
+}
+
 .footer-logo .accent {
     color: var(--accent-color);
 }
 
+.list {
+    list-style: none;
+    }
+    
 /* Site-nav */
 .site-nav .link {
     color: var(--title-text-color);
@@ -64,6 +75,7 @@ list-style: none;
 .site-nav .link.current {
     color: var(--accent-color);
 }
+/* Auth-nav */
 
 .auth-nav .button {
     color: var(--primary-text-color);
@@ -76,9 +88,12 @@ list-style: none;
 
 /* Hero */
 
-.hero-title {
-    color: var(--primary-background-color);
+.hero {
+    background: var(--header-footer-background-color);
 }
+.hero-title {
+    color: var(--primary-background-white-color);
+    }
     
  /* Button */
 
@@ -105,23 +120,38 @@ button {
     color: var(--title-text-color);
 }
 
-/* Command */
+/* Our Command */
+
+.command {
+    background-color: var(--secondary-background-color);
+}
 
 .command .title {
     color: var(--title-text-color);
-}
+    }
 
 /* Footer */
 
-.contacts-item .link {
+.page-footer {
+    background: var(--header-footer-background-color);
+}
+.contacts-item .button {
     color: var(--contacts-text-color);
 }
 
-
-.contacts-item a[title] {
-    color: var(--primary-background-color);
+.contacts-item .button:hover,
+.contacts-item .button:focus {
+    color: var(--accent-color);
 }
 
+.contacts-item a[title] {
+    color: var(--primary-background-white-color);
+}
+
+.contacts-item a[title]:hover,
+.contacts-item a[title]:focus {
+    color: var(--accent-color);
+}
 /* Portfolio
 .button.secondary {
     color: var(--title-text-color:);

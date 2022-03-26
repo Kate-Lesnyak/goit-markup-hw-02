@@ -146,18 +146,18 @@ button {
 }
 
 
-/* Our Command */
+/* Our team */
 
-.section.command {
+.section.team {
     background-color: var(--secondary-background-color);
 }
 
-.command-list .title {
+.team-list .title {
     font-weight: 500;
 }
 
-.command-list .title,
-.command-list .text {
+.team-list .title,
+.team-list .text {
     font-size: 16px;
     line-height: 1.19;
 }
@@ -187,7 +187,7 @@ button {
 }
 
 
-/* Portfolio */
+/* Styles for Portfolio */
 
 .portfolio-title {
     color: var(--title-text-color);
